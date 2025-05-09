@@ -1,13 +1,13 @@
 {% set name = "proglog" %}
-{% set version = "0.1.10" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 658c28c9c82e4caeb2f25f488fff9ceace22f8d69b15d0c1c86d64275e4ddab4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 361ee074721c277b89b75c061336cb8c5f287c92b043efa562ccf7866cda931c
 
 build:
   noarch: python
