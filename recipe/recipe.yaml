@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: proglog
-  version: "0.1.10"
+  version: "0.1.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 658c28c9c82e4caeb2f25f488fff9ceace22f8d69b15d0c1c86d64275e4ddab4
+  sha256: 361ee074721c277b89b75c061336cb8c5f287c92b043efa562ccf7866cda931c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -49,4 +49,3 @@ about:
 extra:
   recipe-maintainers:
     - mdraw
-
